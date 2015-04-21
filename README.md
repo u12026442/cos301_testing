@@ -50,23 +50,23 @@ Question: Can non functioanl requirements tested on each use-case,shouldn't they
 #The Use-cases for buzzSpaces are as follows: Complete testing in each case
 
 1)BuzzSpace.createBuzzSpace 
-	-
-	-
-	-
+-
+-
+-
 	
 2)Close buzz space
-	-
-	-
-	-
+-
+-
+-
 	
 3)BuzzSpace.registerOnBuzzSpace
-	-
-	-
-	-
+-
+-
+-
 	
 4)getProfileForUser
-	-
-	-
-	-
+-
+-
+-
 	
-#Functional requirements can be found in the master specification!
+Functional requirements can be found in the master specification!
