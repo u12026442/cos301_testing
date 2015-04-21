@@ -1,38 +1,15 @@
 \documentclass[11pt,a4paper,titlepage]{article}
-
+\usepackage{graphicx}
 \usepackage[margin=1in]{geometry}
-\usepackage{titling}
+%\usepackage{titling}
 \usepackage[hidelinks]{hyperref}
 
-\newcommand{\subtitle}[1]{%
-  \posttitle{%
-    \par\end{center}
-    \begin{center}\large#1\end{center}
-    \vskip0.5em}%
-}
+
+
+\DeclareGraphicsExtensions{.png}
 
 \begin{document}
-
-\title{Testing Report for the spaces module}
-
-\subtitle{ Git: \url{ https://github.com/u12026442/cos301_testing}}
-
-%Just add your name & studnent nr here 
-\author{COS301 Spaces Testing\\
-Name 1...\\
-Name 2 ....\\
-\\
-\\
-\\
-\\
-\\
-\\
-\\
-}
-    
-\date{\textbf{March 2015}}
-
-\maketitle
+\input{./titlepage.tex}
 
 \tableofcontents
 \pagebreak
