@@ -9,27 +9,8 @@ https://github.com/u12035671/Spaces-A
 
 ## Work Allocation
 ### Functional Requirements
-Login and administrative use case - Maria
-	*this includes testing for:
-		(1) Service contract
-		(2) functional requirements (to be able to login?)
-		(3) the process
 
 ### Non-Functional Requirements
-Login and administrative use case - Maria
-	*testing non functional requirements for:
-		(1) Performance
-		(2) usability
-		(3) reliability
-		
-Question: Can non functioanl requirements tested on each use-case,shouldn't they be tested on the system as a whole? *confused><.
-
-
-
-
-
-
-
 
 
  ################ANNOUNCEMENT - TO NOTE#########
@@ -50,7 +31,7 @@ Question: Can non functioanl requirements tested on each use-case,shouldn't they
 #The Use-cases for buzzSpaces are as follows: Complete testing in each case
 
 1)BuzzSpace.createBuzzSpace 
--
+- Maria 
 -
 -
 	
