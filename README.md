@@ -49,5 +49,7 @@ https://github.com/u12035671/Spaces-A
 - Lelethu Zazaza
 -
 -
+5)assignAdministrator
+- Xoliswa Ntshingila
 	
 Functional requirements can be found in the master specification!
