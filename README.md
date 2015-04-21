@@ -43,11 +43,11 @@ Question: Can non functioanl requirements tested on each use-case,shouldn't they
 2. Non-functional testing/assessment
 - any performance, scalability, maintainability, reliability, usability, ... problems identified with evidence for the identified problem.
 - 
-#Note:List your name in the space provided,
+##Note:List your name in the space provided,
 	please distribute yourselves as evenly
 	as possible.
 
-###The Use-cases for buzzSpaces are as follows: Complete testing in each case
+#The Use-cases for buzzSpaces are as follows: Complete testing in each case
 
 1)BuzzSpace.createBuzzSpace 
 	-
