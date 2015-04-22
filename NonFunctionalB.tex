@@ -3,18 +3,29 @@
 
 \subsubsection{Maintainability}
 
-\subsubsection{Scalability}
-
-\subsubsection{Performance}
-
-\subsubsection{Reliability and Availability}
-
-\subsubsection{Security}
-
-\subsubsection{Auditability}
+A maintainability issue we found in this module was related to the module's code documentation. The code was documented using the basic JSDoc structure, but it was incomplete:
+	\begin{enumerate}
+		\item  Possible exceptions that could be thrown should have been documented for each function.
+		\item Data Types should have been specified for all function arguments using the correct JSDoc tags.
+		\item In the case of request objects the structure of these objects should have been documented using the correct JSDoc tags instead of just listing it in the description.
+	\end{enumerate}
 
 \subsubsection{Testability}
+Some unit test existed for this module but they were incomplete and wrong.
+\begin{enumerate}
+\item Only the getProfileForUser unit test was actually executed, the other unit tests existed but was never called.
+\item Some of the unit tests, test for an expected return value of null from asynchronous functions. This means the test will always succeed even if the function doesn't work.
+\end{enumerate}
 
-\subsubsection{Usability}
+\subsubsection{Usability and Integrability}
+A usability and integrability problem identified in this module is that the functions throws  strings when they have succeeded after an asynchronous call. This might cause the server to crash or show an error page. A better solution might have been to pass a callback argument to the function as is the normal JavaScript convention.
 
-\subsubsection{Deployability}
+\subsubsection{Deployability and Flexibility}
+This module was not written to use the Electrolyte dependency injection framework and it depends on another module, DatabaseStuff, for the database schemas and connection.
+
+Due to the module directly requiring mongoose it will not work in an environment where a different persistence module is used. 
+
+\subsection{Other issues}
+We did not identify issues regarding scalability, reliability and availability or performance in this module.
+
+Security and audibility is not applicable to this module as it was the responsibility of the main integrated system.
