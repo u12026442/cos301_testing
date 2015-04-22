@@ -1,0 +1,16 @@
+%%%%%%%%%
+%  Elzahn Botha
+%%%%%%%%%
+
+\subsubsection{Spaces B}
+\textbf{Pre-condition:} User is registered for module to which buzz space is associated \newline
+\textbf{Result:} Failure\newline
+\textbf{Discussion:}  Instead of checking whether or not the user is registered for the associated module it instead checks whether or not the user is an administrator to that buzz space. Only if the user is an administrator will the user be registered to that buzz space.
+\newline \newline
+\textbf{Pre-condition:}  Buzz space is active\newline
+\textbf{Result:} Success\newline
+\textbf{Discussion:} The function successfully checks whether or not the buzz space is active before continuing. 
+\newline \newline
+\textbf{Post-condition:} User profile is persisted to database \newline
+\textbf{Result:} Failure\newline
+\textbf{Discussion:} It appears to be the case that the function persists the user profile to the database, yet on further investigation of the database itself, there was no reflection that the user profile has been registered on the buzz-space. Instead, it seems that an administrator already in the database is attempting to be registered again back into the database.
