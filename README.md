@@ -51,6 +51,7 @@ Use  the zip file
 
 ###5)assignAdministrator
 * Xoliswa Ntshingila
+* Byron Dinkelmann
 
 ###6)Requirements only in diagram?
 	
@@ -58,3 +59,4 @@ Functional requirements can be found in the master specification!
 
 ### Non-Functional Requirements
 * Renette
+* Jaco Bezuidenhout
