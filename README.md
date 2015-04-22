@@ -51,6 +51,7 @@ Use  the zip file
 
 ###5)assignAdministrator
 * Xoliswa Ntshingila
+* Byron Dinkelmann
 
 ###6)Requirements only in diagram?
 	
