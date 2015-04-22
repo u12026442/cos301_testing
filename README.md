@@ -42,6 +42,7 @@ Use  the zip file
 	
 ###3)BuzzSpace.registerOnBuzzSpace
 * Elzahn
+* Byron Dinkelmann
 
 
 	
@@ -51,7 +52,6 @@ Use  the zip file
 
 ###5)assignAdministrator
 * Xoliswa Ntshingila
-* Byron Dinkelmann
 
 ###6)Requirements only in diagram?
 	
