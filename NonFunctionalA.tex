@@ -6,7 +6,7 @@ There is a lack of the use of development standards such as:
 \begin{itemize}
 	\item structured programming
 		\begin{itemize}
-			\item index.js: No good commented code for descriptions of functions.
+			\item index.js: No good comments on code or descriptions of functions.
 			\item index.js: Line 310-315: Commented out code used for debugging instead of checking if the development flag is set for the system as a whole.
 			\item routes/index.js: Line 302-304: Different indentations in code.
 		\end{itemize}
@@ -22,16 +22,16 @@ Programs have not been parameterized under necessary conditions to promote reusu
 
 \subsubsection{Security}
 
-No trouble have been made to check if a user is logged in before adding a space, adding/removing users and admins. eg. routes/index.js: Lines 93-101
+No trouble was made to check if a user is logged in before adding a space, adding/removing users and admins. eg. routes/index.js: Lines 93-101
 
 \subsubsection{Auditability}
 
-Nothing are being written to log files. Also nothing are being sent to the database audit log.
+Nothing is being written to log files, and nothing is being sent to the database audit log.
 
 \subsubsection{Testability}
 
-Testability are made difficult because all the tests are commented lines in the app. (eg. index.js: Line 97-107) Modules like mocha, supertest and should could be used to test the unit without running the actual program.
+Testability is made difficult because all the tests are commented out lines in the app. (eg. index.js: Line 97-107) Modules like mocha, supertest and should could hav be used to test the unit without running the actual program.
 
 \subsubsection{Deployability}
 
-Very easy to deploy as an app. (Just use "npm install buzz-spaces"). No install script for Node and MongoDB so it should be installed beforehand. There could also be a setting.json file made to setup the app name, database path and DB name and mail server settings for easier deployment.
+Very easy to deploy as an app. (Just use "npm install buzz-spaces"). No install script was provided for Node and MongoDB so it should be installed beforehand. There could also be a setting.json file made to setup the app name, database path and DB name and mail server settings for easier deployment.
