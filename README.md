@@ -60,3 +60,6 @@ Functional requirements can be found in the master specification!
 ### Non-Functional Requirements
 * Renette
 * Jaco Bezuidenhout
+
+### Proof reading and consistency checking 
+* Isabel 
