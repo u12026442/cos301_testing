@@ -1,5 +1,5 @@
 % %%%%%%%%
-%  Lelethu Zazaza
+%  Maria Qumayo
 %%%%%%%%%
 
 \subsection{CreateBuzzSpace}
@@ -10,25 +10,22 @@ The priority of creating a Buzz Space is a critical use case. Without it, lectur
 \textbf{Pre-condition 1:}  Module is active for current year.  \newline
 \textbf{Pre-condition 2:}  Upon cration, no buzz space should exist \newline
 \textbf{Pre-condition 3:}  User must be a lecture for the spesific module \newline
-\textbf{Result:}  Success on the first two  pre-conditions. \newline
- Failure on the last pre-condition.\newline
- Exceptiions are thrown if pre-condition is not met. \newline \newline
- 
- \textbf{Post-condition:}   \newline
- \textbf{Result:}  Success on the first two  pre-conditions. Failure on the last pre-condition.\newline
-  Exceptiions are thrown if pre-condition is not met. \newline
+\textbf{Result:} Success on the first two  pre-conditions. Failure on the last pre-condition.Exceptions are thrown if pre-condition is not met.\newline
+
+\textbf{Post-condition:} Buzz Space Created on success of pre-conditions. \newline
+\textbf{Result:} Success, although any authenticated user may create a Buzz Space.\newline
   
-\textbf{Discussion:}  There is no apparent evidence present in the getProfileForUser use case that indicates that a Buzz Space is tested for activness/inactivess.
-The use case is conducted under the assumption that the Buzz Space is active, this is in the violation of the service contract pre-condition. \newline \newline
-\textbf{Pre-condition:}  User is associated to the relevant Buzz Space\newline
-\textbf{Result:}  Success \newline
-\textbf{Discussion:}  The getProfileForUser use case conducts the query service by ensuring that the current user being searched is associated with the respective Buzz Space.
+\textbf{Discussion:}Users are not identified by their unique roles upon Buzz creation. Any user may create a Buzz Space as long as it doesn't exist.Upon a created Buzz space, threads may be created, active modules are retieved as well as user roles for modules. 
+
 \subsubsection{Spaces B}
-\textbf{Pre-condition:}  Buzz Space is active \newline
-\textbf{Result:}  Failure \newline
-\textbf{Discussion:}  There is no apparent evidence present in the getProfileForUser use case that indicates that a Buzz Space is tested for activness/inactivess.
-The use case is conducted under the assumption that the Buzz Space is active, this is in the violation of the service contract pre-condition. \newline \newline
-\textbf{Pre-condition:}  User is associated to the relevant Buzz Space\newline
-\textbf{Result:}  Success \newline
-\textbf{Discussion:}  The getProfileForUser use case conducts the query service by ensuring that the current user being searched is associated with the respective Buzz Space.
+\textbf{Service Construct:} To Identify the user \newline
+\textbf{Pre-condition 1:}  Module is active for current year.  \newline
+\textbf{Pre-condition 2:}  Upon cration, no buzz space should exist \newline
+\textbf{Pre-condition 3:}  User must be a lecture for the spesific module \newline
+\textbf{Result:} Success on the first two  pre-conditions. Failure on the last pre-condition.Exceptions are thrown if pre-condition is not met. \newline
+
+\textbf{Post-condition:} Buzz Space Created. \newline
+\textbf{Result:} Success. \newline
+  
+\textbf{Discussion:} A registered user can create a Buzz Space successfuley. Though after creation it lacks in most of the functionality, nameley thread creation, registering on the buzz space, getting active modules for the year, getting user roles for modules and assigning an administrative user.
 
