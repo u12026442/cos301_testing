@@ -7,8 +7,17 @@ The priority of creating a Buzz Space is a critical use case. Without it, lectur
 
 \subsubsection{Spaces A}
 \textbf{Service Construct:}  To Identify the user \newline
-\textbf{Pre-condition:}  BuzzSpace is active \newline
-\textbf{Result:}  Failure \newline
+\textbf{Pre-condition 1:}  Module is active for current year.  \newline
+\textbf{Pre-condition 2:}  Upon cration, no buzz space should exist \newline
+\textbf{Pre-condition 3:}  User must be a lecture for the spesific module \newline
+\textbf{Result:}  Success on the first two  pre-conditions. \newline
+ Failure on the last pre-condition.\newline
+ Exceptiions are thrown if pre-condition is not met. \newline \newline
+ 
+ \textbf{Post-condition:}   \newline
+ \textbf{Result:}  Success on the first two  pre-conditions. Failure on the last pre-condition.\newline
+  Exceptiions are thrown if pre-condition is not met. \newline
+  
 \textbf{Discussion:}  There is no apparent evidence present in the getProfileForUser use case that indicates that a Buzz Space is tested for activness/inactivess.
 The use case is conducted under the assumption that the Buzz Space is active, this is in the violation of the service contract pre-condition. \newline \newline
 \textbf{Pre-condition:}  User is associated to the relevant Buzz Space\newline
