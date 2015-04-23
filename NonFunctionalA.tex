@@ -6,32 +6,19 @@ There is a lack of the use of development standards such as:
 \begin{itemize}
 	\item structured programming
 		\begin{itemize}
-			\item app.js: Line 81-82: Commented out code for unit testing instead of using a unit testing flag that could be set to true when you need to test the unit.
-			\item routes/index.js: Line 110-115: Commented out code used for debugging instead of checking if the development flag is set for the system as a whole.
-			\item routes/index.js: Line 102-104: Different indentations in code.
+			\item index.js: No good commented code for descriptions of functions.
+			\item index.js: Line 310-315: Commented out code used for debugging instead of checking if the development flag is set for the system as a whole.
+			\item routes/index.js: Line 302-304: Different indentations in code.
 		\end{itemize}
 	\item recognizable nomenclature
-routes/index.js: Line 104 vs 109: "registerUser" is good recognizable nomenclature, where as in line 109 "submitRU" (refering to submit remove user) are very confusing. Same in line 93,78,67,39
-	\item standards for the user interfaces
-	\begin{itemize}
-		\item User interfaces very unorganized in the views folder. No clear names to know what the interface refer to.
-		\item views/registerUser.hbs: duplicate <head> tags and <head> tags in the body, in the final file because it will be included as the body of the layout. \\
-		No CSS file included for styling. \\
-		<title> tag specified again instead of sending the title over in the JSON object.
-		\item views/layout.hbs: Hard coded menu (Lines 17-24), makes it difficult to find where the menu items are stored. Should be stored in the database with urls to the routes.
-	\end{itemize}
+index.js: Line 111 vs 130: "submitNotify" is good recognizable nomenclature, where as in line 109 "submitCS" (refering to submit create space) are very confusing. Same in line 267,278,293,159
 \end{itemize}
 
 Programs have not been parameterized under necessary conditions to promote reusuability:
 \begin{itemize}
-	\item views/layout.hbs: Hard coded menu (Lines 17-24), makes it difficult to reuse code for other menu items.
+	\item index.js: Line 141-150: Mail Username and password are hard-coded. No settings file for the email settings.
+	
 \end{itemize}
-
-\subsubsection{Scalability and Performance}
-
-No provision are made for making modules 
-
-\subsubsection{Reliability and Availability}
 
 \subsubsection{Security}
 
@@ -43,12 +30,8 @@ Nothing are being written to log files. Also nothing are being sent to the datab
 
 \subsubsection{Testability}
 
-Testability are made difficult because all the tests are commented lines in the app. (eg. app.js: Line 81-82) Modules like mocha, supertest and should could be used to test the unit without running the actual program.
-
-\subsubsection{Usability}
-
-No able to test because of the lack of an user interface that works. Menu are easy to use and in the same place every time though.
+Testability are made difficult because all the tests are commented lines in the app. (eg. index.js: Line 97-107) Modules like mocha, supertest and should could be used to test the unit without running the actual program.
 
 \subsubsection{Deployability}
 
-Very easy to deploy as an app. (Just use "npm start"). No install script for Node and MongoDB so it should be installed beforehand. There could also be a setting.json file made to setup the site name and database path and name for easier deployment.
+Very easy to deploy as an app. (Just use "npm install buzz-spaces"). No install script for Node and MongoDB so it should be installed beforehand. There could also be a setting.json file made to setup the app name, database path and DB name and mail server settings for easier deployment.
