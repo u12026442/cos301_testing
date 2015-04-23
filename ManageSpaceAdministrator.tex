@@ -1,0 +1,34 @@
+% %%%%%%%%%%%%%%%%%%%%%
+%  Xoliswa Ntshingila
+% %%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{ Manage Space Admistrators}
+
+The manageSpaceAdministrators usecase is listed in the BuzzSpace usecase diagram as a subsection of the userManagement usecase , \newline 
+however the services contract and functional requirements are not provided in the Master Specification. \newline
+Owing to the critical nature of a BuzzSpace, assigning an administrator for a BuzzSpace is viewed as a necessity \newline
+consequently the usecase will be tested.
+
+\subsubsection{Spaces A}
+\textbf{Assign Administrator:} Assign an administrator to a buzzSpace. \newline
+The query checks if a buzzSpace for the module is active/exists and if the user is authorized on the Mongo Database.\newline
+An exception is thrown if either of the cases is false. If authorization is successful a new administrator\newline
+is assigned to that specific buzzSpace.\newline
+\textbf{Comments:} isAuthorized function is always true i.e hardcoded instead of using the Authorization Module  \newline
+\textbf{Result:}  Partial \newline
+
+\textbf{Remove  Administrator:} Remove an administrator from the buzzSpace. \newline
+The query checks if a buzzSpace for the module is active/exists, if the user is authorized and is an administrator of the module on the Mongo Database.\newline
+If the authorization is a success and the user is an admin of the buzzSpace , an administrator(not the current administator) \newline
+is successfully removed from the Mongo Database. \newline
+\textbf{Comments:} Exceptions are not thrown,'strings' describing an error are logged/callbacked instead. \newline
+\textbf{Result:}  Partial \newline
+
+\textbf{isAdministrator:} Remove an administrator from the buzzSpace. \newline
+The query checks if a buzzSpace for the module is active/exists, if the user is authorized and is an administrator of the module on the Mongo Database.\newline
+If the user is an administrator, the administrator ID is returned , else false is returned. \newline
+\textbf{Comments:} Exceptions are not thrown,'strings' describing an error are logged/callbacked instead. \newline
+\textbf{Result:}  Partial \newline
+
+\subsubsection{Spaces B}
+The usecase was not implented , this maybe a result of it not being described in the MasterSpecification.
