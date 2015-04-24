@@ -3,11 +3,12 @@
 %%%%%%%%%
 
 \subsection{CreateBuzzSpace}
-The priority of creating a Buzz Space is a critical use case. Without it, lecturers may not create a Buzz space for a particular module they present during a particular year. It should create a root thread for the buzz space with an associated welcome post and assign the lecturer as administrator to that particular space.
+The priority of creating a Buzz Space is a critical use case. Without it, lecturers may not create a Buzz space for a particular module they present during a particular year. It should create a root thread for the buzz space with an associated welcome post and assign the lecturer as administrator to that particular space.Detailed below is an evaluation of Buzz Space A and Buzz Space B to determine whether or not they conform to the pre and post conditions required by the CreateBuzzSpace service contract.  
 
-\subsubsection{Spaces A}
 \textbf{Service Construct:}  To Identify the user who is requesting the creation and the module for which the buzz space is to be 		                                              created. The system will assume that a buzz space for the current academic year is to be created.   	 
   				   \newline
+
+\subsubsection{Spaces A}
 \textbf{Pre-condition 1:}  Module is active for current year.  \newline
 \textbf{Pre-condition 2:}  Upon cration, no buzz space should exist \newline
 \textbf{Pre-condition 3:}  User must be a lecture for the spesific module \newline
@@ -23,8 +24,6 @@ The priority of creating a Buzz Space is a critical use case. Without it, lectur
 \textbf{Discussion:}Users are not identified by their unique roles upon Buzz creation. Any user may create a Buzz Space as long as it doesn't exist .Upon a created Buzz space, threads may be created, active modules are retieved as well as user roles for modules. 
 
 \subsubsection{Spaces B}
-\textbf{Service Construct:} To Identify the user who is requesting the creation and the module for which the buzz space is to be 		                                              created. The system will assume that a buzz space for the current academic year is to be created. 
-				  \newline
 \textbf{Pre-condition 1:}  Module is active for current year.  \newline
 \textbf{Pre-condition 2:}  Upon cration, no buzz space should exist \newline
 \textbf{Pre-condition 3:}  User must be a lecture for the spesific module \newline

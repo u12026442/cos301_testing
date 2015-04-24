@@ -8,23 +8,30 @@
 getProfileForUser is a critical use case in the Spaces module as it used to return the profile a user has on the Buzz Space.
 The implementation of this use case is inclusive of a query service which returns the relevant profile.
 Before the query is made there is a requirement that a Buzz Space exists and that a user is associated with a Buzz Space.
-Thereafter the result from the query is returned with no other modifications to the Buzz Space.
-Detailed below is an evaluation of Buzz Space A and Buzz Space B to determine whether or not they conform to the pre and post conditions required by the getProfileForUser service contract. 
+Thereafter the result from the query is returned with no other modifications to the Buzz Space.getProfileForUser has a priority classified as critical. Detailed below is an evaluation of Buzz Space A and Buzz Space B to determine whether or not they conform to the pre and post conditions required by the getProfileForUser service contract.   
+
+\textbf{Service Construct:}  This is a simple query service which returns the prole the user has on the Buzz Space.	 
+  				   \newline
 
 \subsubsection{Spaces A}
-\textbf{Pre-condition:}  BuzzSpace is active \newline
-\textbf{Result:}  Failure \newline
-\textbf{Discussion:}  There is no apparent evidence present in the getProfileForUser use case that indicates that a Buzz Space is tested for activness/inactivess.
-The use case is conducted under the assumption that the Buzz Space is active, this is in violation of the service contract pre-condition. \newline \newline
-\textbf{Pre-condition:}  User is associated to the relevant Buzz Space\newline
-\textbf{Result:}  Success \newline
-\textbf{Discussion:}  The getProfileForUser use case conducts the query service by ensuring that the current user being searched is associated with the respective Buzz Space.
+\textbf{Pre-condition 1:}  BuzzSpace is active. \newline
+\textbf{Pre-condition 2:}  User is associated to the relevant Buzz Space.\newline
+\textbf{Result:}  Failure on the first pre-condition, sucess on the second pre-condition\newline\newline
+
+
+\textbf{Discussion:} Pre-condition 1 -  There is no apparent evidence present in the getProfileForUser use case that indicates that a Buzz Space is tested for activness/inactivess. 
+The use case is conducted under the assumption that the Buzz Space is active, this is in violation of the service contract pre-condition.
+Pre-condition 2 -The getProfileForUser use case conducts the query service by ensuring that the current user being searched is associated with the respective Buzz Space. \newline \newline
+
+
 \subsubsection{Spaces B}
-\textbf{Pre-condition:}  Buzz Space is active \newline
-\textbf{Result:}  Failure \newline
-\textbf{Discussion:}  There is no apparent evidence present in the getProfileForUser use case that indicates that a Buzz Space is tested for activness/inactivess.
-The use case is conducted under the assumption that the Buzz Space is active, this is in violation of the service contract pre-condition. \newline \newline
-\textbf{Pre-condition:}  User is associated to the relevant Buzz Space\newline
-\textbf{Result:}  Success \newline
-\textbf{Discussion:}  The getProfileForUser use case conducts the query service by ensuring that the current user being searched is associated with the respective Buzz Space.
+
+\textbf{Pre-condition 1:}  Buzz Space is active. \newline
+\textbf{Pre-condition 2:}  User is associated to the relevant Buzz Space.\newline
+\textbf{Result:}  Failure on the first pre-condition, sucsess on the second pre-condition \newline\newline
+
+\textbf{Discussion:} Pre-condition 1 - There is no apparent evidence present in the getProfileForUser use case that indicates that a Buzz Space is tested for activness/inactivess.
+The use case is conducted under the assumption that the Buzz Space is active, this is in violation of the service contract pre-condition. Pre-condition 2 -   The getProfileForUser use case conducts the query service by ensuring that the current user being searched is associated with the respective Buzz Space.\newline \newline
+
+
 
