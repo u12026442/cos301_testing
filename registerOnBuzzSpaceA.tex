@@ -7,16 +7,18 @@
 
 Creates a profile on the buzz-space for that specific user registering.
 
+\textbf{Service Construct:}  The Service Contract of the registerOnBuzzSpace is specified in the pre and post conditions of this module.	
+  				   \newline
+
 \subsubsection{Spaces A}
-\textbf{Pre-condition:}  User is registered for module to which the buzz space is associated \newline
-\textbf{Result:} Failure\newline
-\textbf{Discussion:} Even though the userID that is to be registered to the buzz-space is check to see if it is already registered for that specific space, it however does not check to ensure that the user has been registered for the module that the buzz-space is associated.
+\textbf{Pre-condition 1:}  User is registered for module to which the buzz space is associated. \newline
+\textbf{Pre-condition 2:}  Buzz space is active.\newline
+\textbf{Result:} Failure on pre-condition 1 and 2.\newline\newline
+
+\textbf{Discussion:}Pre-condition 1 -  Even though the userID that is to be registered to the buzz-space is check to see if it is already registered for that specific space, it however does not check to ensure that the user has been registered for the module that the buzz-space is associated.Pre-condition 2 - While there is a condition that checks whether or not the the buzz space is active the condition always returns false even if the buzz space is open. 
 \newline \newline
-\textbf{Pre-condition:}  Buzz space is active\newline
-\textbf{Result:} Failure\newline
-\textbf{Discussion:} While there is a condition that checks whether or not the the buzz space is active the condition always returns false even if the buzz space is open.  
-\newline \newline
+
 \textbf{Post-condition:} User profile is persisted to database \newline
-\textbf{Result:} Success\newline
+\textbf{Result:} Success.\newline\newline
 \textbf{Discussion:} The user profile appears to be persisted to the database as trying to register the same user profile to the database throws an exception in the form of "the space profile already exists". Indicating that the user profile was persisted in the first test case.
 \newline \newline
