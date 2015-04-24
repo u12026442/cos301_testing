@@ -5,26 +5,29 @@
 \newpage
 \subsection{closeBuzzSpace}
 
-Close BuzzSpace use case is important across the Buzz System. It simply sets the buzzSpace to inactive.  \newline 
+Close BuzzSpace use case is important across the Buzz System, this is according to the classification of it's priority. It simply sets the Buzz Space to inactive. 
+
+\textbf{Service Construct:}  The Service Contract of the coloseBuzzSpace is specified in the pre and post conditions of this module.	 
+  				   \newline
 
 \subsubsection{Spaces A}
-\textbf{Pre-condition:}  BuzzSpace for current year and module exists  \newline
-\textbf{Result:}  Success \newline
-\textbf{Comments:}  There exists  proof that shows that a  Space is tested for being active or not in the Moongoose Database.\newline
-\textbf{Pre-condition:}  -User is authorised to create BuzzSpace  \newline
-\textbf{Result:}  Success \newline
-\textbf{Comments:}  There exists  proof that shows that a  User is tested for being authorised to create a space.\newline
-\textbf{Post-condition:}  BuzzSpace is not active  \newline
-\textbf{Result:}  Success \newline
-\textbf{Comments:}  There exists  proof that the isOpen field is set to false.\newline
+\textbf{Pre-condition 1:}  BuzzSpace for current year and module exists.  \newline
+\textbf{Pre-condition 2:}  -User is authorised to create BuzzSpace . \newline
+\textbf{Result:}  Success on pre-condition 1 and 2.  \newline \newline
+\textbf{Discussion:} Pre-condition 1 - There exists  proof that shows that a  Space is tested for being active or not in the Moongoose Database. Pre-condition 2 - There exists  proof that shows that a  User is tested for being authorised to create a space. \newline \newline
+
+\textbf{Post-condition:}  BuzzSpace is not active.  \newline
+\textbf{Result:}  Success. \newline \newline
+
+\textbf{Discussion:} There exists  proof that the isOpen field is set to false.\newline
+
 \subsubsection{Spaces B}
-\textbf{Pre-condition:}  BuzzSpace for current year and module exists  \newline
-\textbf{Result:}  Success \newline
-\textbf{Comments:}  There exists  proof that shows that a  Space is tested for being active or not in the Database.\newline 
-\textbf{Pre-condition:}  User is authorised to create BuzzSpace  \newline
-\textbf{Result:}  Success \newline
-\textbf{Comments:}  There exists  proof that shows that a  User is tested for being authorised to create a space.\newline
-\textbf{Post-condition:}  BuzzSpace is not active  \newline
-\textbf{Result:}  Success \newline
-\textbf{Comments:}  There exists  proof that the isOpen field is set to false. \newline
+\textbf{Pre-condition 1:}  BuzzSpace for current year and module exists.  \newline
+\textbf{Pre-condition 2:}  User is authorised to create BuzzSpace.  \newline
+\textbf{Result:}  Success on both pre-conditions. \newline
+\textbf{Discussion:} Pre- condition 1 -  There exists  proof that shows that a  Space is tested for being active or not in the Database. Pre-condition 2 -  There exists  proof that shows that a  User is tested for being authorised to create a space.\newline \newline 
+
+\textbf{Post-condition:}  BuzzSpace is not active . \newline
+\textbf{Result:}  Success. \newline
+\textbf{Discussion:}  There exists  proof that the isOpen field is set to false. \newline
 
