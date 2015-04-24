@@ -6,26 +6,36 @@
 The priority of creating a Buzz Space is a critical use case. Without it, lecturers may not create a Buzz space for a particular module they present during a particular year. It should create a root thread for the buzz space with an associated welcome post and assign the lecturer as administrator to that particular space.
 
 \subsubsection{Spaces A}
-\textbf{Service Construct:}  To Identify the user \newline
+\textbf{Service Construct:}  To Identify the user who is requesting the creation and the module for which the buzz space is to be 		                                              created. The system will assume that a buzz space for the current academic year is to be created.   	 
+  				   \newline
 \textbf{Pre-condition 1:}  Module is active for current year.  \newline
 \textbf{Pre-condition 2:}  Upon cration, no buzz space should exist \newline
 \textbf{Pre-condition 3:}  User must be a lecture for the spesific module \newline
 \textbf{Result:} Success on the first two  pre-conditions. Failure on the last pre-condition.Exceptions are thrown if pre-condition is not met.\newline
 
-\textbf{Post-condition:} Buzz Space Created on success of pre-conditions. \newline
-\textbf{Result:} Success, although any authenticated user may create a Buzz Space.\newline
+\textbf{Post-condition 1:} Buzz Space created for modle and Buzz Space is open.\newline
+\textbf{Post-condition 2:} Lecturer assigned as space administrator.\newline
+\textbf{Post-condition 3:}Profile for lecturer created.\newline
+\textbf{Post-condition 4:} root thread with welcome post created for Buzz Space.\newline
+\textbf{Post-condition as per Spaces A:} Buzz Space Created on success of pre-conditions. \newline
+\textbf{Result:} Success, on post-condition as per Spaces A -  any authenticated user may create a Buzz Space.\newline
   
-\textbf{Discussion:}Users are not identified by their unique roles upon Buzz creation. Any user may create a Buzz Space as long as it doesn't exist.Upon a created Buzz space, threads may be created, active modules are retieved as well as user roles for modules. 
+\textbf{Discussion:}Users are not identified by their unique roles upon Buzz creation. Any user may create a Buzz Space as long as it doesn't exist .Upon a created Buzz space, threads may be created, active modules are retieved as well as user roles for modules. 
 
 \subsubsection{Spaces B}
-\textbf{Service Construct:} To Identify the user \newline
+\textbf{Service Construct:} To Identify the user who is requesting the creation and the module for which the buzz space is to be 		                                              created. The system will assume that a buzz space for the current academic year is to be created. 
+				  \newline
 \textbf{Pre-condition 1:}  Module is active for current year.  \newline
 \textbf{Pre-condition 2:}  Upon cration, no buzz space should exist \newline
 \textbf{Pre-condition 3:}  User must be a lecture for the spesific module \newline
 \textbf{Result:} Success on the first two  pre-conditions. Failure on the last pre-condition.Exceptions are thrown if pre-condition is not met. \newline
 
-\textbf{Post-condition:} Buzz Space Created. \newline
-\textbf{Result:} Success. \newline
+\textbf{Post-condition 1:} Buzz Space created for modle and Buzz Space is open.\newline
+\textbf{Post-condition 2:} Lecturer assigned as space administrator.\newline
+\textbf{Post-condition 3:} Profile for lecturer created.\newline
+\textbf{Post-condition 4:} root thread with welcome post created for Buzz Space.\newline
+\textbf{Post-condition as per Spaces B:} Buzz Space Created.\newline
+\textbf{Result:} Success on the post-condition as per Spaces B. \newline
   
 \textbf{Discussion:} A registered user can create a Buzz Space successfuley. Though after creation it lacks in most of the functionality, nameley thread creation, registering on the buzz space, getting active modules for the year, getting user roles for modules and assigning an administrative user.
 
