@@ -47,7 +47,7 @@ Use  the zip file
 
 	
 ###4)getProfileForUser
-* Lelethu Zazaza
+
 
 
 ###5)assignAdministrator
